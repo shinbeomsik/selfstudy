@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>셀프스터디</title>
+<title>bikefriends</title>
 </head>
 <body>
-<table>
+<table border="1">
  <tr>
  <td>아이디</td>
  <td><input></td>
@@ -15,6 +15,13 @@
   <tr>
  <td>비밀번호</td>
  <td><input></td>
+ </tr>
+   <tr>
+ <td colspan="2"><button>로그인</button></td>
+ </tr>
+   <tr>
+ <td><button>아이디찾기</button></td>
+ <td><button>회원가입</button></td>
  </tr>
 </table>
 </body>
