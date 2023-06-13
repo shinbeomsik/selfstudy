@@ -109,7 +109,7 @@
 	</tr>
 	<tr>
 		<td>생년원일</td>
-		<td colspan="2"><input></td>
+		<td colspan="2"><input type="date"></td>
 	</tr>
 	<tr>
 		<td>주소</td>
