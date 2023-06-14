@@ -58,15 +58,16 @@
 </script>
 <body>
 <div style="display:flex; justify-content:center;">
+<form action="member_insert" method="post">
 <table border="1" style="text-align: center">
 	<tr>
 		<td>아이디</td>
-		<td><input></td>
+		<td><input name="member_id"></td>
 		<td><button>아이디체크</button></td>
 	</tr>
 	<tr>
 		<td>비밀번호</td>
-		<td colspan="2"><input></td>
+		<td colspan="2"><input name="password"></td>
 	</tr>
 	<tr>
 		<td colspan="3">비밀번호 6자리이상</td>
@@ -80,16 +81,16 @@
 	</tr>
 	<tr>
 		<td>닉네임</td>
-		<td><input></td>
+		<td><input name="member_nickname"></td>
 		<td><button>닉네임체크</button></td>
 	</tr>
 	<tr>
 		<td>이름</td>
-		<td colspan="2"><input></td>
+		<td colspan="2"><input name="member_name"></td>
 	</tr>
 	<tr>
 		<td>전화번호</td>
-		<td><input></td>
+		<td><input name="member_phone"></td>
 		<td><button>인증번호 보내기</button></td>
 	</tr>
 	<tr>
@@ -99,7 +100,7 @@
 	</tr>
 	<tr>
 		<td>이메일</td>
-		<td><input></td>
+		<td><input name="member_email"></td>
 		<td><button>인증번호 보내기</button></td>
 	</tr>
 	<tr>
@@ -109,22 +110,23 @@
 	</tr>
 	<tr>
 		<td>생년원일</td>
-		<td colspan="2"><input type="date"></td>
+		<td colspan="2"><input type="date" name="member_birth" min="1900-00-00"></td>
 	</tr>
 	<tr>
 		<td>주소</td>
 		<td colspan="2">
 			<input type="text" id="sample6_postcode" placeholder="우편번호">
 			<input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기"><br>
-			<input type="text" id="sample6_address" placeholder="주소"><br>
-			<input type="text" id="sample6_detailAddress" placeholder="상세주소">
+			<input type="text" id="sample6_address" placeholder="주소" name="member_location"><br>
+			<input type="text" id="sample6_detailAddress" placeholder="상세주소"  name="member_detaillocation">
 			<input type="text" id="sample6_extraAddress" placeholder="참고항목">
 		</td>
 	</tr>
 	<tr>
-		<td colspan="3"><button>등록</button></td>
+		<td colspan="3"><button>회원가입</button></td>
 	</tr>
 </table>
+</form>
 </div>
 </body>
 </html>

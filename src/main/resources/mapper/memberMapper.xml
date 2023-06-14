@@ -5,7 +5,7 @@
 
 	<insert id="create" parameterType="memberVO">
 		insert into member values
-		(#{member_id},#{password},#{member_nickname},#{member_name},#{member_phone},#{member_email},#{member_birth},#{member_location})
+		(#{member_id},#{password},#{member_nickname},#{member_name},#{member_phone},#{member_email},#{member_birth},#{member_location},#{member_detaillocation})
 	</insert>
 	
 	

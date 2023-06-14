@@ -12,6 +12,7 @@ public class MemberDAO {
 		
 		//회원가입
 		public void insert(MemberVO bag) {
+			System.out.println(bag);
 			my.insert("member.create",bag);
 		}
 }
