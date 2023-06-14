@@ -21,7 +21,7 @@
  </tr>
    <tr>
  <td><button>아이디찾기</button></td>
- <td><button>회원가입</button></td>
+ <td><a href ="memberinsert.jsp"><button>회원가입</button></a></td>
  </tr>
 </table>
 </body>

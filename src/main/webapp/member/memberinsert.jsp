@@ -58,7 +58,7 @@
 </script>
 <body>
 <div style="display:flex; justify-content:center;">
-<form action="member_insert" method="post">
+<form action="member_insert" method="get">
 <table border="1" style="text-align: center">
 	<tr>
 		<td>아이디</td>
@@ -90,13 +90,7 @@
 	</tr>
 	<tr>
 		<td>전화번호</td>
-		<td><input name="member_phone"></td>
-		<td><button>인증번호 보내기</button></td>
-	</tr>
-	<tr>
-		<td>인증번호</td>
-		<td><input></td>
-		<td><button>인증번호 확인</button></td>
+		<td colspan="2"><input name="member_phone"></td>
 	</tr>
 	<tr>
 		<td>이메일</td>
