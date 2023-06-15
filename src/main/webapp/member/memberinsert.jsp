@@ -63,26 +63,26 @@
 	<tr>
 		<td>아이디</td>
 		<td><input name="member_id"></td>
-		<td><button>아이디체크</button></td>
+		<td><button type ="button">아이디체크</button></td>
 	</tr>
 	<tr>
 		<td>비밀번호</td>
 		<td colspan="2"><input name="password"></td>
 	</tr>
 	<tr>
-		<td colspan="3">비밀번호 6자리이상</td>
+		<td colspan="3"> <span id="pw_length"></span></td>
 	</tr>
 	<tr>
 		<td>비밀번호확인</td>
 		<td colspan="2"><input></td>
 	</tr>
 	<tr>
-		<td colspan="3">비밀번호 같냐 다르냐</td>
+		<td colspan="3"><span id="pw_check"></span></td>
 	</tr>
 	<tr>
 		<td>닉네임</td>
 		<td><input name="member_nickname"></td>
-		<td><button>닉네임체크</button></td>
+		<td><button type ="button">닉네임체크</button></td>
 	</tr>
 	<tr>
 		<td>이름</td>
