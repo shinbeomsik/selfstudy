@@ -8,9 +8,6 @@
 		(#{member_id},#{password},#{member_nickname},#{member_name},#{member_phone},#{member_email},#{member_birth},#{member_location},#{member_detaillocation})
 	</insert>
 	
-	<select id="idcheck" resultType="int">
-		select COUNT(*) from member
-		where  member_id = #{member_id}
-	</select>
 	
+
 </mapper>

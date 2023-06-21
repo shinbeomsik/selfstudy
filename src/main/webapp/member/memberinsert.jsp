@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <title>bikefriends</title>
 </head>
-<script type="text/javascript" src="../resources/js/jquery-3.6.4.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
     function sample6_execDaumPostcode() {
@@ -56,27 +55,6 @@
             }
         }).open();
     }
-    
-    $(function() {
-    	$('#member_idcheck').click(function() {
-    		$.ajax({
-    			url : "member_idcheck",
-    			type : "POST",
-    			dataType : "text",
-    			data : {"member_id" : $("#member_id").val()},
-    			success : function(x) {
-    				if(x == 1){
-    					alert("중복된 아이디입니다.");
-    				} else{
-    					$("#submit").removeAttr("disabled");
-    					alert("사용가능한 아이디입니다.");
-    				}
-    			}, error:function(e) {
-    			　　　alert("error: " + e);
-    			}
-    		}) //ajax
-    	})//b1
-    })//$
 </script>
 <body>
 <div style="display:flex; justify-content:center;">
@@ -84,8 +62,8 @@
 <table border="1" style="text-align: center">
 	<tr>
 		<td>아이디</td>
-		<td><input name="member_id" id="member_id"></td>
-		<td><button type ="button" id ="member_idcheck">아이디체크</button></td>
+		<td><input name="member_id"></td>
+		<td><button type ="button">아이디체크</button></td>
 	</tr>
 	<tr>
 		<td>비밀번호</td>
