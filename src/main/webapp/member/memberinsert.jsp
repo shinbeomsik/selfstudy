@@ -67,8 +67,8 @@
     			success : function(x) {
     				if(x == 1){
     					alert("중복된 아이디입니다.");
+    					   $('#member_id').val('');
     				} else{
-    					$("#submit").removeAttr("disabled");
     					alert("사용가능한 아이디입니다.");
     				}
     			}, error:function(e) {
