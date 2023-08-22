@@ -9,6 +9,27 @@
 <script type="text/javascript" src="../resources/js/jquery-3.6.4.js"></script>
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 <script>
+
+
+function isSame() {
+  var password = document.getElementById('password').value;
+  var confirmPassword = document.getElementById('password2').value;
+
+  if(password != '' && password.length >= 6) {
+      if(password == confirmPassword) {
+          document.getElementById('pw_check').innerHTML='비밀번호가 일치합니다.';
+          document.getElementById('pw_check').style.color='blue';
+      }
+      
+      else {
+          document.getElementById('pw_check').innerHTML='비밀번호가 일치하지 않습니다.';
+          document.getElementById('pw_check').style.color='red';
+      }
+  } else{
+  	document.getElementById('pw_check').innerHTML='비밀번호는 6자리 이상이야 합니다.';
+      document.getElementById('pw_check').style.color='red';
+  }
+}
     function sample6_execDaumPostcode() {
         new daum.Postcode({
             oncomplete: function(data) {
@@ -96,7 +117,7 @@
 	</tr>
 	<tr>
 		<td>비밀번호확인</td>
-		<td colspan="2"><input></td>
+		<td colspan="2"><input name="password2"></td>
 	</tr>
 	<tr>
 		<td colspan="3"><span id="pw_check"></span></td>
